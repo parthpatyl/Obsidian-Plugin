@@ -1,0 +1,25 @@
+{
+  "name": "dsa-reset-plugin",
+  "version": "1.0.0",
+  "description": "Track and reset DSA practice problems with analytics",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "node esbuild.config.mjs production",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "obsidian",
+    "plugin",
+    "dsa",
+    "algorithms"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.3.3",
+    "esbuild": "^0.27.3",
+    "obsidian": "^1.12.3",
+    "typescript": "^5.9.3"
+  }
+}

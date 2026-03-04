@@ -1,0 +1,10 @@
+{
+  "id": "dsa-tracker",
+  "name": "DSA Tracker",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "description": "Track and reset DSA practice problems with analytics.",
+  "author": "",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}

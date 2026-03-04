@@ -1,0 +1,393 @@
+/* DSA Tracker - Simplified Dashboard Styles */
+
+/* Dashboard container */
+.dsa-dashboard {
+  padding: 1rem;
+  font-family: var(--font-text);
+  overflow-y: auto;
+  height: 100%;
+  max-height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Ensure scrolling works */
+.workspace-leaf-content[data-type="dsa-dashboard"] {
+  height: 100%;
+  overflow: hidden;
+}
+
+.workspace-leaf-content[data-type="dsa-dashboard"] .view-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Header */
+.dashboard-header {
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-normal);
+}
+
+.dashboard-header p {
+  margin: 0.25rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+/* Quick Actions */
+.dashboard-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.dashboard-action-btn {
+  background: var(--interactive);
+  color: var(--text-on-interactive);
+  border: none;
+  border-radius: 4px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dashboard-action-btn:hover {
+  background: var(--interactive-hover);
+}
+
+/* Stats Grid - Simple 2 columns */
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.stat-card {
+  background: var(--background-secondary);
+  border-radius: 6px;
+  padding: 0.75rem;
+  text-align: center;
+  border: 1px solid var(--background-modifier-border);
+}
+
+.stat-card .value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-normal);
+}
+
+.stat-card .label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+}
+
+/* Progress Section */
+.progress-section {
+  margin-bottom: 1rem;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.progress-header h3 {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.progress-percentage {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.progress-bar-large {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--background-modifier-border);
+}
+
+.progress-bar-fill-large {
+  height: 100%;
+  border-radius: 3px;
+  background: var(--text-muted);
+}
+
+/* Single column layout */
+.dashboard-section {
+  margin-bottom: 1rem;
+  background: var(--background-secondary);
+  border-radius: 6px;
+  padding: 0.75rem;
+  border: 1px solid var(--background-modifier-border);
+}
+
+.dashboard-section h3 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-normal);
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* Tables */
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 0.4rem 0.35rem;
+  border-bottom: 1px solid var(--background-modifier-border);
+  text-align: left;
+}
+
+.dashboard-table th {
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+}
+
+.dashboard-table tr:last-child td {
+  border-bottom: none;
+}
+
+.dashboard-table a {
+  color: var(--text-accent);
+  text-decoration: none;
+}
+
+.dashboard-table a:hover {
+  text-decoration: underline;
+}
+
+/* Topic rows */
+.topic-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0;
+}
+
+.topic-name {
+  min-width: 70px;
+  font-size: 0.75rem;
+}
+
+.topic-bar-container {
+  flex: 1;
+}
+
+.topic-count {
+  min-width: 25px;
+  text-align: right;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.progress-bar {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--background-modifier-border);
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--text-muted);
+  border-radius: 2px;
+}
+
+/* Difficulty Grid - Equal spacing */
+.difficulty-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.difficulty-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.difficulty-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.difficulty-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.difficulty-count {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.difficulty-bar-wrapper {
+  width: 100%;
+}
+
+.difficulty-bar {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--background-modifier-border);
+  overflow: hidden;
+}
+
+.difficulty-bar-fill {
+  height: 100%;
+  background: var(--text-muted);
+  border-radius: 3px;
+}
+
+.difficulty-percentage {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+/* Difficulty badges */
+.difficulty-badge {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.difficulty-easy {
+  background: var(--background-modifier-border);
+  color: var(--text-muted);
+}
+
+.difficulty-medium {
+  background: var(--background-modifier-border);
+  color: var(--text-muted);
+}
+
+.difficulty-hard {
+  background: var(--background-modifier-border);
+  color: var(--text-muted);
+}
+
+/* Difficulty grid layout */
+.difficulty-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.difficulty-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.difficulty-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.difficulty-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.difficulty-count {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+.difficulty-bar-wrapper {
+  width: 100%;
+}
+
+.difficulty-bar {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--background-modifier-border);
+  width: 100%;
+}
+
+.difficulty-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  background: var(--text-muted);
+}
+
+.difficulty-percentage {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--text-muted);
+}
+
+.empty-state h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-normal);
+}
+
+.empty-state p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .dsa-dashboard {
+    padding: 0.5rem;
+  }
+
+  .dashboard-header h2 {
+    font-size: 1rem;
+  }
+
+  .dashboard-action-btn {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .stat-card {
+    padding: 0.5rem;
+  }
+
+  .stat-card .value {
+    font-size: 1rem;
+  }
+
+  .dashboard-table {
+    font-size: 0.7rem;
+  }
+}
