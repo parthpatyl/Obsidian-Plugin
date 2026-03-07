@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <!-- Background circle (optional - for contrast) -->
+  <circle cx="64" cy="64" r="60" stroke="currentColor" stroke-width="2" fill="none" opacity="0.1"/>
+
+  <!-- Code brackets - representing code/algorithms -->
+  <!-- Left bracket < -->
+  <path d="M38 44 L22 64 L38 84" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Right bracket > -->
+  <path d="M90 44 L106 64 L90 84" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Internal geometric structure - binary tree nodes -->
+  <!-- Root node -->
+  <circle cx="64" cy="52" r="8" stroke="currentColor" stroke-width="3" fill="none"/>
+
+  <!-- Left child -->
+  <circle cx="48" cy="76" r="6" stroke="currentColor" stroke-width="3" fill="none"/>
+
+  <!-- Right child -->
+  <circle cx="80" cy="76" r="6" stroke="currentColor" stroke-width="3" fill="none"/>
+
+  <!-- Connecting lines (tree structure) -->
+  <path d="M58 56 L52 70" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <path d="M70 56 L76 70" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Horizontal connection between children -->
+  <path d="M52 76 L76 76" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+</svg>
